@@ -511,6 +511,8 @@ img {
     color: var(--footer-link-color);
 }
 .submit-footer {
+    width: 200px;
+    height: 50px;
     background: var(--accent-color);
     box-shadow: var(--submit-button-shadow);
     border-radius: 4px;
@@ -526,8 +528,7 @@ img {
 
     display: flex;
     justify-content: center;
-    align-items: center;   
-    padding:0 28px;   
+    align-items: center;    
 }
 .icon-send {
     fill: var(--white-color);
@@ -592,6 +593,13 @@ img {
     align-items: center;
     cursor: pointer;
 }
+.icon {
+    transition: fill var(--timing-function);
+}
+.close:hover  .icon {
+    fill:#188CE8;
+}
+
 .input-field {
     margin-bottom: 10px;
 }
@@ -685,6 +693,8 @@ img {
     color: var(--accent-color);
 }
 .form-submit {
+    width: 200px;
+    height:50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -698,7 +708,6 @@ img {
     box-shadow: var(--submit-button-shadow);
     border-radius: 4px;
     border: 0;
-    padding: 10px 52px;
     transition: background-color var(--timing-function);
     
 }
